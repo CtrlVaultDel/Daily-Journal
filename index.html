@@ -7,20 +7,34 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+    <header class="header-container">
+        <div><img class="app-logo" src="./images/app-logo.png" alt="Daily Journal Icon"></div>
+        <div><h1 class="header-title">Ryan DeVault's Daily Journal</h1></div>
+    </header>
     <form action="">
         <fieldset>
+            <!-- Input section for journal date -->
             <label for="journalDate">Date of entry</label>
             <input type="date" name="journalDate" id="journalDate">
+
+            <!-- Input section for concepts covered -->
+            <label for="journalConcepts">Concepts Covered</label>
+            <input type="text" name="journalConcepts" id="journalConcepts">
+            
+            <!-- Input section for journal entry (main text) -->
+            <label for="journalEntry">Journal Entry</label>
+            <input type="textarea" name="journalEntry" id="journalEntry">
+
+            <!-- Input section for mood -->
+            <label for="journalMood">Mood</label>
+            <input type="select" name="journalMood" id="journalMood">
         </fieldset>
     </form>
-    <header>
-
-    </header>
     <main>
 
     </main>
     <footer>
-        <div>Ryan DeVault</div>
+        <div>Ryan DeVault &copy;</div>
         <div><a href="https://github.com/CtrlVaultDel"><img class="github-icon" src="./images/gitHubIcon.svg" alt="GitHub Icon"></a></div>
     </footer>
 </body>

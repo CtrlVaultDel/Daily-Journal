@@ -1,0 +1,8 @@
+.header-container{
+    display: flex;
+}
+
+.header-title{
+    margin: 7px;
+    padding: 0px;
+}
