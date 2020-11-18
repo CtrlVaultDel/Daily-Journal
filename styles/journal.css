@@ -1,0 +1,20 @@
+.journal{
+    background-color: #b0c1fd;
+    margin: 15px;
+    padding: 10px;
+    border: solid black 2px;
+}
+
+.btn-container{
+    display:flex;
+}
+
+.cancel-btn, .edit-btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cancel-btn__img, .edit-btn__img{
+    width: 25px;
+}
