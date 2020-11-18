@@ -1,2 +1,16 @@
+/* Note: liarose color palette used from color-hex.com*/
+
 @import "./icon.css";
 @import "./header.css";
+@import "./form.css";
+@import "./footer.css";
+@import "./journal.css";
+
+body{
+    background-color: #313e7e;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+

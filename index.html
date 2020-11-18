@@ -5,37 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily-Journal</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="header-container">
         <div><img class="app-logo" src="./images/app-logo.png" alt="Daily Journal Icon"></div>
         <div><h1 class="header-title">Ryan DeVault's Daily Journal</h1></div>
     </header>
-    <form action="">
-        <fieldset>
+    <form action="./scripts/main.js" method="get">
+        <fieldset class="form-container">
             <!-- Input section for journal date -->
-            <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate">
-
-            <!-- Input section for concepts covered -->
-            <label for="journalConcepts">Concepts Covered</label>
-            <input type="text" name="journalConcepts" id="journalConcepts">
-            
-            <!-- Input section for journal entry (main text) -->
-            <label for="journalEntry">Journal Entry</label>
-            <input type="textarea" name="journalEntry" id="journalEntry">
+            <div class="journalDate">
+                <label for="journalDate">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </div>
 
             <!-- Input section for mood -->
-            <label for="journalMood">Mood</label>
-            <input type="select" name="journalMood" id="journalMood">
+            <div class="journalMood">
+                <label for="journalMood">Mood</label>
+                <select name="journalMood" id="journalMood">
+                    <option value="elated">Elated</option>
+                    <option value="happy">Happy</option>
+                    <option value="normal">Normal</option>
+                    <option value="sad">Sad</option>
+                    <option value="depressed">Depressed</option>
+                </select>
+            </div>
+
+            <!-- Input section for concepts covered -->
+            <div class="journalConcepts">
+                <label for="journalConcepts">Concepts Covered</label>
+                <input type="text" name="journalConcepts" id="journalConcepts" placeholder="Enter concepts covered here">
+            </div>
+
+            <!-- Input section for journal entry (main text) -->
+            <div class="journalEntry">
+                <label for="journalEntry">Journal Entry</label>
+                <textarea name="journalEntry" id="journalEntry" cols="60" rows="10" placeholder="Enter your journal entry here"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="journalSubmit">
+                <input type="submit" value="Record Journal Entry" id="journalSubmit">
+            </div>
         </fieldset>
     </form>
-    <main>
+
+    <!-- This will hold previously entered journal entries (Allows for them to be edited or deleted here) -->
+    <main class="journalList">
+        <!-- Eventually JS will be used to autopopulate this -->
+        <article class="journal">
+            <div class="btn-container">
+                <div class="journal__delete">
+                    <button class="cancel-btn">
+                        <img class="cancel-btn__img" src="./images/cancel-icon.png" alt="cancel icon">
+                    </button>
+                </div>
+                <div>
+                    <button class="edit-btn">
+                        <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
+                    </button>
+                </div>
+            </div>
+            <div class="journal__date">
+                Today's Date
+            </div>
+            <div class="journal__mood">
+                Excited
+            </div>
+            <div class="journal__concepts">
+                Daily Journal Stuff
+            </div>
+            <div class="journal__entry">
+                This was quite a bit more difficult than I anticipated
+            </div>
+        </article>
+        <article class="journal">
+            <div class="btn-container">
+                <div class="journal__delete">
+                    <button class="cancel-btn">
+                        <img class="cancel-btn__img" src="./images/cancel-icon.png" alt="cancel icon">
+                    </button>
+                </div>
+                <div>
+                    <button class="edit-btn">
+                        <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
+                    </button>
+                </div>
+            </div>
+            <div class="journal__date">
+                Today's Date
+            </div>
+            <div class="journal__mood">
+                Excited
+            </div>
+            <div class="journal__concepts">
+                Daily Journal Stuff
+            </div>
+            <div class="journal__entry">
+                This was quite a bit more difficult than I anticipated
+            </div>
+        </article>
+        <article class="journal">
+            <div class="btn-container">
+                <div class="journal__delete">
+                    <button class="cancel-btn">
+                        <img class="cancel-btn__img" src="./images/cancel-icon.png" alt="cancel icon">
+                    </button>
+                </div>
+                <div>
+                    <button class="edit-btn">
+                        <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
+                    </button>
+                </div>
+            </div>
+            <div class="journal__date">
+                Today's Date
+            </div>
+            <div class="journal__mood">
+                Excited
+            </div>
+            <div class="journal__concepts">
+                Daily Journal Stuff
+            </div>
+            <div class="journal__entry">
+                This was quite a bit more difficult than I anticipated
+            </div>
+        </article>
 
     </main>
     <footer>
         <div>Ryan DeVault &copy;</div>
-        <div><a href="https://github.com/CtrlVaultDel"><img class="github-icon" src="./images/gitHubIcon.svg" alt="GitHub Icon"></a></div>
+        <div><a href="https://github.com/CtrlVaultDel"><img class="github-icon" src="./images/github-icon.png" alt="GitHub Icon"></a></div>
     </footer>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
