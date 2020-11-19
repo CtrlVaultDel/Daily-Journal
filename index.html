@@ -55,38 +55,12 @@
 
     <!-- This will hold previously entered journal entries (Allows for them to be edited or deleted here) -->
     <main class="journalList">
-        <!-- Eventually JS will be used to autopopulate this -->
-        <article class="journal">
-            <div class="btn-container">
-                <div class ="btn-container__edit">
-                    <button class="edit-btn">
-                        <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
-                    </button>
-                </div>
-                <div class="btn-container__delete">
-                    <button class="delete-btn">
-                        <img class="delete-btn__img" src="./images/delete-icon.png" alt="delete icon">
-                    </button>
-                </div>
-            </div>
-            <div class="journal__date">
-                Today's Date
-            </div>
-            <div class="journal__mood">
-                Excited
-            </div>
-            <div class="journal__concepts">
-                Daily Journal Stuff
-            </div>
-            <div class="journal__entry">
-                This was quite a bit more difficult than I anticipated
-            </div>
-        </article>
+        <!-- JS will autofill this with pre-existing journal entries -->
     </main>
     <footer>
         <div>Ryan DeVault &copy;</div>
         <div><a href="https://github.com/CtrlVaultDel"><img class="github-icon" src="./images/github-icon.png" alt="GitHub Icon"></a></div>
     </footer>
-    <script src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
