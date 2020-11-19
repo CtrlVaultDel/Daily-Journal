@@ -5,6 +5,8 @@
 @import "./form.css";
 @import "./footer.css";
 @import "./journal.css";
+@import "./buttons.css";
+
 
 body{
     background-color: #313e7e;

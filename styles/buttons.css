@@ -1,10 +1,3 @@
-.journal{
-    background-color: #b0c1fd;
-    margin: 15px;
-    padding: 10px;
-    border: solid black 2px;
-}
-
 .btn-container{
     display:flex;
 }

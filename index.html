@@ -12,16 +12,24 @@
         <div><img class="app-logo" src="./images/app-logo.png" alt="Daily Journal Icon"></div>
         <div><h1 class="header-title">Ryan DeVault's Daily Journal</h1></div>
     </header>
+    
     <form action="./scripts/main.js" method="get">
         <fieldset class="form-container">
+            <h2>Daily Journal</h2>
             <!-- Input section for journal date -->
-            <div class="journalDate">
+            <div class="journalDate form-item">
                 <label for="journalDate">Date of entry</label>
                 <input type="date" name="journalDate" id="journalDate">
             </div>
 
-            <!-- Input section for mood -->
-            <div class="journalMood">
+            <!-- Input section for concepts covered -->
+            <div class="journalConcepts form-item">
+                <label for="journalConcepts">Concepts Covered</label>
+                <input type="text" name="journalConcepts" id="journalConcepts" placeholder="Main ideas covered">
+            </div>
+
+             <!-- Input section for mood -->
+             <div class="journalMood form-item">
                 <label for="journalMood">Mood</label>
                 <select name="journalMood" id="journalMood">
                     <option value="elated">Elated</option>
@@ -30,12 +38,6 @@
                     <option value="sad">Sad</option>
                     <option value="depressed">Depressed</option>
                 </select>
-            </div>
-
-            <!-- Input section for concepts covered -->
-            <div class="journalConcepts">
-                <label for="journalConcepts">Concepts Covered</label>
-                <input type="text" name="journalConcepts" id="journalConcepts" placeholder="Enter concepts covered here">
             </div>
 
             <!-- Input section for journal entry (main text) -->
@@ -56,14 +58,14 @@
         <!-- Eventually JS will be used to autopopulate this -->
         <article class="journal">
             <div class="btn-container">
-                <div class="journal__delete">
-                    <button class="cancel-btn">
-                        <img class="cancel-btn__img" src="./images/cancel-icon.png" alt="cancel icon">
-                    </button>
-                </div>
-                <div>
+                <div class ="btn-container__edit">
                     <button class="edit-btn">
                         <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
+                    </button>
+                </div>
+                <div class="btn-container__delete">
+                    <button class="delete-btn">
+                        <img class="delete-btn__img" src="./images/delete-icon.png" alt="delete icon">
                     </button>
                 </div>
             </div>
@@ -80,59 +82,6 @@
                 This was quite a bit more difficult than I anticipated
             </div>
         </article>
-        <article class="journal">
-            <div class="btn-container">
-                <div class="journal__delete">
-                    <button class="cancel-btn">
-                        <img class="cancel-btn__img" src="./images/cancel-icon.png" alt="cancel icon">
-                    </button>
-                </div>
-                <div>
-                    <button class="edit-btn">
-                        <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
-                    </button>
-                </div>
-            </div>
-            <div class="journal__date">
-                Today's Date
-            </div>
-            <div class="journal__mood">
-                Excited
-            </div>
-            <div class="journal__concepts">
-                Daily Journal Stuff
-            </div>
-            <div class="journal__entry">
-                This was quite a bit more difficult than I anticipated
-            </div>
-        </article>
-        <article class="journal">
-            <div class="btn-container">
-                <div class="journal__delete">
-                    <button class="cancel-btn">
-                        <img class="cancel-btn__img" src="./images/cancel-icon.png" alt="cancel icon">
-                    </button>
-                </div>
-                <div>
-                    <button class="edit-btn">
-                        <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
-                    </button>
-                </div>
-            </div>
-            <div class="journal__date">
-                Today's Date
-            </div>
-            <div class="journal__mood">
-                Excited
-            </div>
-            <div class="journal__concepts">
-                Daily Journal Stuff
-            </div>
-            <div class="journal__entry">
-                This was quite a bit more difficult than I anticipated
-            </div>
-        </article>
-
     </main>
     <footer>
         <div>Ryan DeVault &copy;</div>
