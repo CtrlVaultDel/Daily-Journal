@@ -1,0 +1,1 @@
+See wireframe.png inside of the images folder to see the basic outline for how the website should look.
