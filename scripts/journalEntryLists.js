@@ -8,14 +8,15 @@ import { getEntries, useEntries } from "./journalDataProvider.js";
 import { journalEntryComponent } from "./journalEntry.js";
 
 // Selectors
-const entryLog = document.querySelector(".journalList");
+const targetElement = document.querySelector(".journalList");
 
 let entries = [];
 
 export const entryListComponent = () => {
     // Use the journal entry data from the data provider component
     getEntries()
-    .then(entries = useEntries())
-    .then(entryLog.innerHTML = entries.map(entry => 
-        journalEntryComponent(entry)))
-}
+    .then(() => {
+        entries = useEntries();
+        targetElement.innerHTML = entries.map(entry => journalEntryComponent(entry));
+    })
+};
