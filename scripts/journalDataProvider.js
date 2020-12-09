@@ -1,8 +1,8 @@
 // Selectors
-const eventHub = document.querySelector(".container")
+const eventHub = document.querySelector(".container");
 
 // This will hold the API data locally
-let journal = []
+let journal = [];
 
 // Fetch entries data from the API and then store the information on the local journal variable
 export const getEntries = () => {
@@ -29,4 +29,4 @@ export const saveJournalEntry = newJournalEntry => {
     })
     .then(getEntries)
     .then(dispatchStateChangeEvent);
-}
+};
