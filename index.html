@@ -13,44 +13,8 @@
         <div><h1 class="header-title">Ryan DeVault's Daily Journal</h1></div>
     </header>
     
-    <form action="./scripts/main.js" method="get">
-        <fieldset class="form-container">
-            <h2>Daily Journal</h2>
-            <!-- Input section for journal date -->
-            <div class="journalDate form-item">
-                <label for="journalDate">Date of entry</label>
-                <input type="date" name="journalDate" id="journalDate">
-            </div>
-
-            <!-- Input section for concepts covered -->
-            <div class="journalConcepts form-item">
-                <label for="journalConcepts">Concepts Covered</label>
-                <input type="text" name="journalConcepts" id="journalConcepts" placeholder="Main ideas covered">
-            </div>
-
-             <!-- Input section for mood -->
-             <div class="journalMood form-item">
-                <label for="journalMood">Mood</label>
-                <select name="journalMood" id="journalMood">
-                    <option value="elated">Elated</option>
-                    <option value="happy">Happy</option>
-                    <option value="normal">Normal</option>
-                    <option value="sad">Sad</option>
-                    <option value="depressed">Depressed</option>
-                </select>
-            </div>
-
-            <!-- Input section for journal entry (main text) -->
-            <div class="journalEntry">
-                <label for="journalEntry">Journal Entry</label>
-                <textarea name="journalEntry" id="journalEntry" cols="60" rows="10" placeholder="Enter your journal entry here"></textarea>
-            </div>
-
-            <!-- Submit button -->
-            <div class="journalSubmit">
-                <input type="submit" value="Record Journal Entry" id="journalSubmit">
-            </div>
-        </fieldset>
+    <form action="./scripts/main.js" method="get" class="form-container">
+        <!-- JS will render the form here -->
     </form>
 
     <!-- This will hold previously entered journal entries (Allows for them to be edited or deleted here) -->
