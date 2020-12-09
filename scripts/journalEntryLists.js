@@ -1,17 +1,14 @@
-/*
- *  Purpose:
- *    To render as many journal entry components as
- *    there are items in the collection exposed by the
- *    data provider component
- */
+// Imports
 import { getEntries, useEntries } from "./journalDataProvider.js";
 import { journalEntryComponent } from "./journalEntry.js";
 
 // Selectors
 const targetElement = document.querySelector(".journalList");
+const eventHub = document.querySelector(".container");
 
 let entries = [];
 
+// Used to initialize the existing entries in the API on the DOM.
 export const entryListComponent = () => {
     // Use the journal entry data from the data provider component
     getEntries()
@@ -20,3 +17,6 @@ export const entryListComponent = () => {
         targetElement.innerHTML = entries.map(entry => journalEntryComponent(entry));
     })
 };
+
+// If a new journal entry is saved, add the new JSON file to the DOM
+eventHub.addEventListener("journalStateChange", () => entryListComponent());
