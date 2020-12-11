@@ -6,7 +6,7 @@ let journal = [];
 
 // Fetch entries data from the API and then store the information on the local journal variable
 export const getEntries = () => {
-    return fetch("http://localhost:8088/entries")
+    return fetch("http://localhost:8088/entries?_expand=mood")
         .then(response => response.json())
         .then(parsedEntries => journal = parsedEntries);
 };
@@ -20,7 +20,7 @@ const dispatchStateChangeEvent = () => eventHub.dispatchEvent(new CustomEvent("j
 
 // Called when a new entry is saved on the form
 export const saveJournalEntry = newJournalEntry => {
-    return fetch('http://localhost:8088/entries', {
+    return fetch('http://localhost:8088/entries?_expand=mood', {
         method: "POST",
         headers: {
             "content-Type": "application/json"
