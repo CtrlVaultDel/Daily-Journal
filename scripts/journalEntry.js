@@ -31,7 +31,7 @@ export const journalEntryComponent = (entry) => {
             </div>
 
             <div class="journal__mood">
-                Mood: ${entry.mood}
+                Mood: ${entry.mood.label}
             </div>
         </section>
     `
