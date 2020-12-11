@@ -8,7 +8,7 @@ export const journalEntryComponent = (entry) => {
             
             <div class="btn-container">
                 <div class ="btn-container__edit">
-                    <button class="edit-btn">
+                    <button class="edit-btn" id="edit--${entry.id}">
                         <img class="edit-btn__img" src="./images/edit-icon.png" alt="edit icon">
                     </button>
                 </div>
@@ -16,7 +16,7 @@ export const journalEntryComponent = (entry) => {
                     <h3>${entry.concepts}</h3>
                 </div>
                 <div class="btn-container__delete">
-                    <button class="delete-btn">
+                    <button class="delete-btn" id="delete--${entry.id}">
                         <img class="delete-btn__img" src="./images/delete-icon.png" alt="delete icon">
                     </button>
                 </div>
