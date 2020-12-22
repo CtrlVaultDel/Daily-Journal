@@ -1,40 +1,18 @@
 {
   "entries": [
     {
-      "date": "2020-11-16",
-      "concepts": "Git & GitHub",
-      "entry": "Our team worked a lot with Git and GitHub commands.",
-      "id": 1,
-      "moodId": 3
-    },
-    {
-      "date": "2020-11-17",
-      "concepts": "JavaScript Stuff",
-      "entry": "Worked on a few different projects, including Martin's Aquarium and Modern Farm.",
-      "id": 2,
-      "moodId": 3
-    },
-    {
-      "date": "2020-11-18",
-      "concepts": "JavaScript Stuff",
-      "entry": "Still working on Martin's Aquarium and Modern Farm.",
-      "id": 3,
-      "moodId": 3
-    },
-    {
       "date": "2020-12-09",
       "concepts": "EventListeners",
       "entry": "Working again with Event Listeners and a local API. It is starting to make a lot more sense now that I have used it quite a bit more. Also getting used to modularizing my code, particularly JavaScript. Additionally, I have been keeping in mind the importance of de-coupling when possible (This is the process of keeping code relevant to a certain functionality nearly or completely separate from other code and only allowing anonymous communication via eventListeners.",
-      "id": 4,
+      "id": 1,
       "moodId": 3
     },
     {
       "date": "2020-12-10",
       "concepts": "Databases",
       "entry": "I started watching a few videos on databases today. Learned about the importance of \"normalizing\" your database in order to reduce redundancies and avoid (insertion, deletion & modification) abnormalities. Some main elements of a database include Entities (Customer, Products, Orders) their related attributes (customerId, name, address, phone#) and the relationships between each entity. Each entity will have one unique \"primary key\" that represents the entirety of the data table. When the primary key of one entity is referenced in another entity, that key is considered a \"foreign key\" in the location it is being called to. There can only be one primary key per entity, but an entity can have any amount of foreign keys.",
-      "mood": "normal",
-      "id": 5,
-      "moodId": 3
+      "id": 2,
+      "moodId": 2
     }
   ],
   "moods": [

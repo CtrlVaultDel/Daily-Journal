@@ -17,7 +17,6 @@ export const useEntries = () => journal.slice();
 // This is called within the saveEntry function to let the eventHub know when a new entry has been made
 const dispatchStateChangeEvent = () => eventHub.dispatchEvent(new CustomEvent("journalStateChange"));
 
-
 // Called when a new entry is saved on the form
 export const saveJournalEntry = newJournalEntry => {
     return fetch('http://localhost:8088/entries?_expand=mood', {
