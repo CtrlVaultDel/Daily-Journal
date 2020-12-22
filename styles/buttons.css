@@ -20,4 +20,5 @@
 
 .delete-btn__img, .edit-btn__img{
     width: 25px;
+    pointer-events: none;
 }

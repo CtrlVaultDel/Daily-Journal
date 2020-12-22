@@ -12,7 +12,7 @@ const deleteSpecifiedEntry = (uniqueId) =>{
             "content-Type": "application/json"
         }
     })
-    .then(() => eventHub.dispatchEvent(dispatchStateChangeEvent));
+    .then(dispatchStateChangeEvent);
 };
 
 eventHub.addEventListener("click", event => {
@@ -20,9 +20,9 @@ eventHub.addEventListener("click", event => {
 
         // Split off the identifier from the delete button
         // [0] = "delete", [1] = ID#
-        const toDelete = event.target.id.split("--");
-
+        const toDelete = event.target.id.split("--")[1];
+        
         // Call the function to delete the specified object from entries.json
-        deleteSpecifiedEntry(toDelete[1])
+        deleteSpecifiedEntry(toDelete)
     };
 });
