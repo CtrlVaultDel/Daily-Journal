@@ -12,7 +12,7 @@ eventHub.addEventListener("click", event => {
         const date = document.getElementById("journalDate").value;
         const concepts = document.getElementById("journalConcepts").value;
         const entry = document.getElementById("journalEntry").value;
-        const mood = document.getElementById("journalMood").value;
+        const moodId = document.getElementById("journalMood").value;
 
         // Check to see if the concepts text is less than 15 characters long
         if(concepts.length < 15){
@@ -21,7 +21,7 @@ eventHub.addEventListener("click", event => {
                 date: date,
                 concepts: concepts,
                 entry: entry,
-                mood: mood
+                moodId: parseInt(moodId)
             }
             // Save the new entry object to the API
             saveJournalEntry(newEntry);
@@ -58,11 +58,11 @@ export const journalFormComponent = () => {
                     Mood
                 </label>
                 <select name="journalMood" id="journalMood">
-                    <option value="elated">${moodsList[0].label}</option>
-                    <option value="happy">${moodsList[1].label}</option>
-                    <option value="normal" selected>${moodsList[2].label}</option>
-                    <option value="sad">${moodsList[3].label}</option>
-                    <option value="depressed">${moodsList[4].label}</option>
+                    <option value="1">${moodsList[0].label}</option>
+                    <option value="2">${moodsList[1].label}</option>
+                    <option value="3" selected>${moodsList[2].label}</option>
+                    <option value="4">${moodsList[3].label}</option>
+                    <option value="5">${moodsList[4].label}</option>
                 </select>
             </div>
             <div class="journalEntry">
