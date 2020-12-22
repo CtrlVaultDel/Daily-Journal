@@ -14,7 +14,7 @@ export const entryListComponent = () => {
     getEntries()
     .then(() => {
         entries = useEntries();
-        targetElement.innerHTML = entries.map(entry => journalEntryComponent(entry));
+        targetElement.innerHTML = entries.map(entry => journalEntryComponent(entry)).join("");
     })
 };
 
