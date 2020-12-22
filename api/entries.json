@@ -19,7 +19,7 @@
       "concepts": "Holiday Road ",
       "entry": "Started a new project named Holiday Road with three others (Nicholas Douso, Christine Doza & Anna Moore). The main objective of the project is to gain a better understanding of dealing with a large amount of data from multiple API's. Two of the API's are from NSS (Attractions and Eateries) while a couple come from external sources (Weather & Parks). We also will be using event listeners quite a lot with this project to maintain the decoupling principle between our JS modules. Today, about halfway through the day, we started by determining dependencies, then drawing them out on the DOM. We also worked on preparing an eventListener Diagram so that we could see the data flow. We did not work on any code, all of the time we spend on the project today was for planning.",
       "id": 6,
-      "moodID": 2
+      "moodId": 2
     }
   ],
   "moods": [
