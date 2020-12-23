@@ -20,6 +20,48 @@
       "entry": "Started a new project named Holiday Road with three others (Nicholas Douso, Christine Doza & Anna Moore). The main objective of the project is to gain a better understanding of dealing with a large amount of data from multiple API's. Two of the API's are from NSS (Attractions and Eateries) while a couple come from external sources (Weather & Parks). We also will be using event listeners quite a lot with this project to maintain the decoupling principle between our JS modules. Today, about halfway through the day, we started by determining dependencies, then drawing them out on the DOM. We also worked on preparing an eventListener Diagram so that we could see the data flow. We did not work on any code, all of the time we spend on the project today was for planning.",
       "id": 6,
       "moodId": 2
+    },
+    {
+      "date": "2020-12-14",
+      "concepts": "Holiday Road",
+      "entry": "Today our group did additional planning before starting work on the Holiday Road project. We decided to have me write up some boilerplate code for the group to pull from. Everyone worked together to ensure that we had a good starting place for the entire group to work with. After that, we split into handling our own tasks. Mine included performing code reviews for the team and working on getting the Weather API working with our website. The main information we needed was a 5 day forecast of the area the chosen park is in. Currently, the park selection and weather are not connected, but the weather will be functional and ready for when that time comes. Nick is working on getting the park selection and API working, Anna is working towards getting the Eateries and its related API working and the same for Christine with the Attractions and their API. It is a lot of work but we are getting a lot of hands on learning with regards to API's, reading up on their documentation, implementing them and also properly using Event Listeners.",
+      "moodId": 3,
+      "id": 7
+    },
+    {
+      "date": "2020-12-15",
+      "concepts": "Holiday Road",
+      "entry": "Nick and I accidentally caused our website to make 900+ requests to the Weather API without noticing it. It took some time and speaking with an instructor to realize that we set the call within a for loop, causing it to make a call for each and every park within the Park API, whoops... Unfortunately, we blew through our allowed API calls for the day, but we have made the appropriate adjustments to the code and it should work just fine tomorrow. ",
+      "moodId": 3,
+      "id": 8
+    },
+    {
+      "date": "2020-12-16",
+      "concepts": "Holiday Road",
+      "entry": "The Park selection and Weather API call now work hand-in-hand with one another properly. Today I got to working on how to save the selected park, attraction & eatery as its own saved itinerary. There are not many failsafe's included just yet but the user must have a selection for each and also a name for the itinerary keyed-in prior to the \"save itinerary\" button being enabled so there's that.",
+      "moodId": 3,
+      "id": 9
+    },
+    {
+      "date": "2020-12-17",
+      "concepts": "Holiday Road",
+      "entry": "We are working on some finishing touches today with the project before we present to our instructor (Joe) tomorrow. We managed to get the MVP up and running so we decided to do some polishing along with some additional features if possible. The attractions and eateries options available now filter based on the location of the park. The CSS has been polished considerably compared to where it was (mostly just HTML). Nick and I worked together to get the user's local weather to show up prior to a park being selected. I managed to put an additional safety feature when saving itineraries: the code will now check if the name of the itinerary has already been used before saving it to the list of itineraries. The saved itineraries hold the unique ID of the selected park, attraction & eatery so that they can be called specifically from their related API's, however, I was unable to work this into the code in time for the end of the day.",
+      "moodId": 3,
+      "id": 10
+    },
+    {
+      "date": "2020-12-18",
+      "concepts": "Holiday Road",
+      "entry": "Today was our presentation for our Holiday Road project. We had no issues in the console and it went according to plan. Everyone did a great job and I definitely appreciated everyone's hard work and dedication to doing their best each day. After the presentations were done, the class took a small quiz to determine where we are with regards to our understanding of what we have done up to this point. Later on, after a long break, we came back to go over the quiz to see what the correct answers were. Unfortunately, we will be on break until January 4th, but I'll still be enjoying some coding between now and then.",
+      "moodId": 3,
+      "id": 11
+    },
+    {
+      "date": "2020-12-22",
+      "concepts": "Daily Journal",
+      "entry": "I started working again on my Daily Journal today to work out some kinks. I managed to break it at some point without realizing it, losing some of the journals along the way, unfortunately. There were two goals that I was working towards: 1) Separating moods into their own list that would be identified through a specific ID and 2) Adding the ability to delete entries. Thankfully, I managed to get both accomplished. My next goals will involve adding functionality to the edit button and also possibly reformatting how the page works so that journal entries are grouped together in a way so they take up less room until you \"drill down\" into them.",
+      "moodId": 3,
+      "id": 12
     }
   ],
   "moods": [
